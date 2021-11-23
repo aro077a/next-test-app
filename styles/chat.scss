@@ -1,0 +1,17 @@
+.chat {
+  width: 100%;
+  height: calc(100vh - 7vh);
+  background-color: #dbdbdb;
+  padding: 2.4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .chat {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: unset;
+  }
+}

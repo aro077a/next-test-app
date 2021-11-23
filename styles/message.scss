@@ -1,0 +1,36 @@
+.message {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    .message__content--text {
+      background-color: #cfd0d3;
+      padding: 1.2rem;
+      border-radius: 1rem;
+    }
+  }
+  &__image {
+    width: 4rem;
+    height: 4rem;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__content {
+    text-align-last: end;
+    &--text {
+      font-size: 1.4rem;
+      padding: 1.2rem;
+      font-weight: 600;
+      border-radius: 1rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    &--date {
+      font-size: 1.1rem;
+      color: #b8b8b8;
+      margin-top: 0.5rem;
+    }
+  }
+}

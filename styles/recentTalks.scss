@@ -1,0 +1,31 @@
+.recentTalks {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    border-top: 1.5px solid #b8b8b8;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    cursor: pointer;
+    p {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+.ReactCollapse--content {
+  height: 56vh;
+  overflow: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .recentTalks {
+    &__container {
+      width: unset;
+    }
+  }
+}

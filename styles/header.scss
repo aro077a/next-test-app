@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7vh;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    background: #fd8a94;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 5vh;
+    &__logo {
+      width: 5.5rem;
+    }
+  }
+}

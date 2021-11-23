@@ -1,0 +1,43 @@
+.search {
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    width: 25rem;
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 1rem;
+    svg {
+      display: inline-block;
+      font-size: 1.4rem;
+    }
+    input {
+      border: 0;
+      outline: 0;
+      margin-left: 1rem;
+    }
+    ::-webkit-input-placeholder {
+      font-style: italic;
+    }
+    :-moz-placeholder {
+      font-style: italic;
+    }
+    ::-moz-placeholder {
+      font-style: italic;
+    }
+    :-ms-input-placeholder {
+      font-style: italic;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .search {
+    &__container {
+      width: unset;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.leftNavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  height: calc(100vh - 7vh);
+  padding: 5rem 0;
+  &__icons {
+    font-size: 2.2rem;
+    padding: 2.9rem;
+    color: #fd8a94;
+    cursor: pointer;
+    &:hover {
+      background-color: #ffe6e9;
+    }
+    &:last-child {
+      color: #cfd0d3;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leftNavbar {
+    height: unset;
+    &__icons {
+      padding: 1.6rem;
+    }
+  }
+}
